@@ -6,6 +6,9 @@ namespace Projeto.Application.Models
 {
     public class MedicoConsultaModel
     {
-
+        public string IdMedico { get; set; }
+        public string Nome { get; set; }
+        public string Crm { get; set; }
+        public string Especializacao { get; set; }
     }
 }

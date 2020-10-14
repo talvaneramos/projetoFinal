@@ -12,17 +12,20 @@ namespace Projeto.Application.Models
         [Required(ErrorMessage = "Por favor, informe a data de atendimento do paciente. ")]
         public string DataAtendimento { get; set; }
 
-
         [MinLength(7, ErrorMessage = "Por favor, informe no mínimo {1} caracteres.")]
         [MaxLength(100, ErrorMessage = "Por favor, informe no máximo {1} caracteres.")]
         [Required(ErrorMessage = "Por favor, informe o local. ")]
         public string Local { get; set; }
-
 
         [MinLength(7, ErrorMessage = "Por favor, informe no mínimo {1} caracteres.")]
         [MaxLength(1200, ErrorMessage = "Por favor, informe no máximo {1} caracteres.")]
         [Required(ErrorMessage = "Por favor, informe a observação. ")]
         public string Observacoes { get; set; }
 
+        [Required(ErrorMessage = "Por favor, informe o id do médico. ")]
+        public string IdMedico { get; set; }
+
+        [Required(ErrorMessage = "Por favor, informe o id do paciente. ")]
+        public string IdPaciente { get; set; }
     }
 }
